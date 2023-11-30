@@ -27,26 +27,31 @@ public class jpnl_TelaInicial extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        jbSair = new javax.swing.JButton();
+        jbEditar = new javax.swing.JButton();
+        jbVisualizar = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(17, 11, 20));
 
         jPanel1.setBackground(new java.awt.Color(215, 183, 208));
         jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        jButton1.setBackground(new java.awt.Color(153, 86, 105));
-        jButton1.setForeground(new java.awt.Color(246, 242, 248));
-        jButton1.setText("Sair");
+        jbSair.setBackground(new java.awt.Color(153, 86, 105));
+        jbSair.setForeground(new java.awt.Color(246, 242, 248));
+        jbSair.setText("Sair");
+        jbSair.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbSairActionPerformed(evt);
+            }
+        });
 
-        jButton2.setBackground(new java.awt.Color(153, 86, 105));
-        jButton2.setForeground(new java.awt.Color(246, 242, 248));
-        jButton2.setText("Editar");
+        jbEditar.setBackground(new java.awt.Color(153, 86, 105));
+        jbEditar.setForeground(new java.awt.Color(246, 242, 248));
+        jbEditar.setText("Editar");
 
-        jButton3.setBackground(new java.awt.Color(153, 86, 105));
-        jButton3.setForeground(new java.awt.Color(246, 242, 248));
-        jButton3.setText("Visualizar");
+        jbVisualizar.setBackground(new java.awt.Color(153, 86, 105));
+        jbVisualizar.setForeground(new java.awt.Color(246, 242, 248));
+        jbVisualizar.setText("Visualizar");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -54,21 +59,21 @@ public class jpnl_TelaInicial extends javax.swing.JPanel {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap(7, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jbSair, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE)
+                    .addComponent(jbEditar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE)
+                    .addComponent(jbVisualizar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(jButton3)
+                .addComponent(jbVisualizar)
                 .addGap(18, 18, 18)
-                .addComponent(jButton2)
+                .addComponent(jbEditar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 171, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(jbSair)
                 .addContainerGap())
         );
 
@@ -86,11 +91,15 @@ public class jpnl_TelaInicial extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jbSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbSairActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jbSairActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton jbEditar;
+    private javax.swing.JButton jbSair;
+    private javax.swing.JButton jbVisualizar;
     // End of variables declaration//GEN-END:variables
 }
