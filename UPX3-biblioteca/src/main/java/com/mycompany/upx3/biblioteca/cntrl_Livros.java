@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * @author regis
  */
 public class cntrl_Livros {
-    private ArrayList<Livros> livros = new ArrayList<>();
+    private final ArrayList<Livros> livros = new ArrayList<>();
     
     public boolean save (Livros l){
         if (l != null) {

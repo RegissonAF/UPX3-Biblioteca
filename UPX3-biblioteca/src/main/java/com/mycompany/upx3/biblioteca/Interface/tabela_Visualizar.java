@@ -42,7 +42,7 @@ public class tabela_Visualizar extends javax.swing.JDialog {
             
         
         }
-        for (int i = 0; i < livros.size(); i++) {
+        for (int i = 0; i < livros.size() && livros.get(i) != null; i++) {
             jtbl_Visualizar.setValueAt(livros.get(i).getNome(),i,0);
             jtbl_Visualizar.setValueAt(livros.get(i).getId(),i,1);
             jtbl_Visualizar.setValueAt(livros.get(i).getAutor(),i,2);
