@@ -13,7 +13,8 @@ import javax.swing.JOptionPane;
  * @author regis
  */
 public class jf_TelaInicial extends javax.swing.JFrame {
-    cntrl_Livros cl = new cntrl_Livros();
+
+    cntrl_Livros cl = new cntrl_Livros(); //Instanciando e inicializando o controlador de livros salvos.
     /**
      * Creates new form jf_TelaInicial
      */
@@ -225,10 +226,11 @@ public class jf_TelaInicial extends javax.swing.JFrame {
     }//GEN-LAST:event_jtxtf_GeneroActionPerformed
 
     private void jbt_SairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbt_SairActionPerformed
-        System.exit(0);
+        System.exit(0); //Fecha a janela quando apertado o botão sair.
     }//GEN-LAST:event_jbt_SairActionPerformed
 
     private void jbt_VisualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbt_VisualizarActionPerformed
+        //Instanciando uma nova javela para a tabela e vinculando ela na janela principal.
         tabela_Visualizar visualizar = new tabela_Visualizar(null, true, cl);
         visualizar.setVisible(true);
     }//GEN-LAST:event_jbt_VisualizarActionPerformed
