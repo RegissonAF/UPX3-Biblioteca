@@ -241,6 +241,7 @@ public class jf_TelaInicial extends javax.swing.JFrame {
         livro.setGenero(jtxtf_Genero.getText());
         livro.setQtdPaginas(Integer.parseInt(jtxtf_Paginas.getText()));
         livro.setDisponiveis(Integer.parseInt(jtxtf_Disponiveis.getText()));
+       
         
         if (cl.save(livro))  {
             JOptionPane.showMessageDialog(null, "Livro salvo com sucesso!");
